@@ -12,5 +12,21 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-  return tutorials
+  return tutorials.map(arrayLine => {
+    const arrayWord = arrayLine.map("")
+    return arrayWord
+  })
 }
+
+// const titleCased = () => {
+//   return tutorials.map(arrayLine => {
+//     const wordSplit = arrayLine.split(" ")
+//     const capEachWord = wordSplit.map( 
+//       eachWord => eachWord.charAt(0).toUpperCase() + eachWord.slice(1)
+//     )
+//     const arrayReturn = capEachWord.join(" ")
+//     return arrayReturn
+//   })
+// }
+
+
